@@ -52,7 +52,7 @@ textarea {
 body {
   font-size: 0.347rem;
 }
-.homePage {
+.container {
   position: relative;
 }
 .userWrap {
@@ -80,7 +80,7 @@ body {
   border-radius: 50%;
 }
 .user .userMes .userName {
-  font-size: 0.36rem;
+  font-size: 0.34666667rem;
   font-weight: bold;
   color: #333333;
   position: absolute;
@@ -169,4 +169,49 @@ body {
 }
 .banner .bannerList .bannerMes {
   text-align: center;
+}
+.avatar img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.likeUserList {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}
+.likeUserList .likeUser {
+  height: 1.8rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+.likeUserList .likeUser .avatar {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.likeUserList .likeUser .info {
+  float: left;
+  padding-left: 0.26666667rem;
+  margin-top: 0.4rem;
+  margin-left: 1rem;
+}
+.likeUserList .likeUser .nickname {
+  font-size: 0.32rem;
+  color: #333333;
+}
+.likeUserList .likeUser .timeago {
+  font-size: 0.26666667rem;
+  color: #999999;
+}
+.likeUserList .likeUser .arrow {
+  margin-top: 0.76666667rem;
+  margin-bottom: 0.76666667rem;
+  width: 0.26666667rem;
+  height: 0.46666667rem;
+  float: right;
+}
+.likeUserList .likeUser .arrow img {
+  width: 100%;
+  height: 100%;
 }

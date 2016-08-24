@@ -294,3 +294,57 @@ body{
         }
     }
 }
+
+.rank {
+    header {
+        .headerBanner {
+            height: 510 / @base_rem;
+            width: 100%;
+            display: -webkit-flex;
+            display: flex;
+            justify-content: center;
+            .headerUserInfo {
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: row;
+                flex-direction: row;
+                padding-top: 20 / @base_rem;
+                .avatar {
+                    .round-image-block(65 / @base_rem);
+                }
+                p {
+                    margin-left: 10 / @base_rem;
+                    padding-top: 25 / @base_rem;
+                    font-size: 24 / @base_rem;
+                    color: #ffffff;
+                }
+            }
+        }
+        .headerUser {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+        	flex-direction: row;
+            .avatar {
+                .round-image-block(75 / @base_rem);
+            }
+            .info {
+                -webkit-flex: auto;
+    	        flex: auto;
+            }
+            .score {
+
+            }
+        }
+
+        .rankUserList {
+            .rankUser {
+                .avatar {
+                    .round-image-block(75 / @base_rem);
+                }
+            }
+
+        }
+
+    }
+}

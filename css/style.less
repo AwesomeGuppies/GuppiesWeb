@@ -38,10 +38,22 @@ body{
 }
 .container{
   position: relative;
-}
-.userWrap{
   margin-bottom: 1.3rem;
 }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.delete-button {
+    background-color: #fbfbfb;
+    color: #167ee9;
+    font: 25 / @base_rem;
+    padding: 20 / @base_rem 0;
+    text-align: center;
+}
+
 .user{
   border-bottom: 1px solid #e2e2e2;
   .userMes{
@@ -296,7 +308,9 @@ body{
 }
 
 .rank {
+    background-color: #f9f9f9;
     header {
+        background-color: #fff;
         .headerBanner {
             height: 510 / @base_rem;
             width: 100%;
@@ -323,28 +337,205 @@ body{
         .headerUser {
             display: -webkit-flex;
             display: flex;
-            -webkit-flex-direction: row;
-        	flex-direction: row;
+            align-items: center;
+            padding: 32 / @base_rem 30 / @base_rem;
             .avatar {
+                padding-left: 44 / @base_rem;
+                padding-right: 20 / @base_rem;
                 .round-image-block(75 / @base_rem);
             }
             .info {
                 -webkit-flex: auto;
     	        flex: auto;
+                .name {
+                    color: #333333;
+                    font-size: 24 / @base_rem;
+                }
+                .score {
+                    margin-top: 15 / @base_rem;
+                    color: #999999;
+                    font-size: 20 / @base_rem;
+                }
             }
             .score {
-
+                font-size: 30 / @base_rem;
+                color: #ee4957;
             }
         }
+    }
 
-        .rankUserList {
-            .rankUser {
-                .avatar {
-                    .round-image-block(75 / @base_rem);
+    .rankUserList {
+        margin-top: 10 / @base_rem;
+        background-color: #fff;
+        .rankUser {
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            padding: 0 30 / @base_rem;
+            .number {
+                font-size: 24 / @base_rem;
+                padding-right: 30 / @base_rem;
+            }
+            .avatar {
+                .round-image-block(75 / @base_rem);
+            }
+            .line {
+                flex: auto;
+                display: -webkit-flex;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #e2e2e2;
+                padding: 50 / @base_rem 0;
+                margin-left: 30 / @base_rem;
+                .nickname {
+                    font-size: 24 / @base_rem;
+                    flex: auto;
+                }
+                .score {
+                    font-size: 30 / @base_rem;
+                    color: #167ee9;
                 }
             }
 
         }
 
+    }
+}
+
+.rankPage {
+    background-color: #f9f9f9;
+    .box {
+        padding-top: 60 / @base_rem;
+
+        .box-title {
+            padding-left: 30 / @base_rem;
+            font-size: 30 / @base_rem;
+            color: #666666;
+        }
+
+        .item-list {
+            margin-top: 20 / @base_rem;
+            background-color: #ffffff;
+            border-top: 1px solid #e2e2e2;
+            border-bottom: 1px solid #e2e2e2;
+            .item {
+
+                display: -webkit-flex;
+                display: flex;
+                padding: 30 / @base_rem;
+                .icon {
+                    .square-image-block(32 / @base_rem);
+                }
+
+                .name {
+                    padding-left: 20 / @base_rem;
+                    flex: auto;
+                    font-size: 30 / @base_rem;
+                    color: #333333;
+                    font-weight: bold;
+                }
+
+                .arrow {
+
+                    .image-block(20 / @base_rem, 30 / @base_rem);
+                }
+            }
+        }
+    }
+}
+
+.discovery {
+    .box-list {
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+
+        .box {
+            box-sizing: border-box;
+            width: 1 / 3 * 100%;
+            border: 1px solid #ffffff;
+
+            .content {
+                display: -webkit-flex;
+                display: flex;
+                justify-content: space-between;
+                padding: 20 / @base_rem 13 / @base_rem;
+                span {
+                    color: #999999;
+                }
+                .score {
+                    color: #666666;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.owner-box {
+    display: flex;
+    display: -webkit-flex;
+    padding-left: 30 / @base_rem;
+    padding-right: 30 / @base_rem;
+    padding-top: 20 / @base_rem;
+    align-items: center;
+    .avatar {
+        .round-image-block(77 / @base_rem);
+    }
+    .nickname {
+        padding-left: 20 / @base_rem;
+        flex: auto;
+        font-size: 24 / @base_rem;
+        color: #333333;
+        font-weight: bold;
+    }
+    .score {
+        color: #999999;
+        font-size: 20 / @base_rem;
+    }
+}
+
+.description-box {
+    // 6 is line heigth
+    padding: (15 - 6) / @base_rem 30 / @base_rem (20 - 6) / @base_rem 30 / @base_rem;
+    font: 24 / @base_rem;
+    color: #333333;
+    line-height: (6 + 24) / @base_rem;
+}
+
+.location-tag-box {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    padding: 0 30 / @base_rem 20 / @base_rem 30 / @base_rem;
+    font-size: 24 / @base_rem;
+    .icon {
+        .image-block(18 / @base_rem, 23 / @base_rem);
+    }
+    .location {
+        margin-left: 10 / @base_rem;
+        color: #999999;
+    }
+    .tag {
+        margin-left: 20 / @base_rem;
+        color: #167ee9;
+    }
+}
+
+.image-box {
+    width: 100%;
+    position: relative;
+
+    .icon {
+        position: absolute;
+        bottom: 20 / @base_rem;
+        right: 20 / @base_rem;
+        .square-image-block(40 / @base_rem);
+        background: url('/image/icon/40-xin.png') no-repeat;
+        background-size: 100%;
+    }
+    .active {
+        background: url('/image/icon/40-hongxin.png') no-repeat;
+        background-size: 100%;
     }
 }

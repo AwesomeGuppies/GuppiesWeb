@@ -36,6 +36,11 @@ input,textarea{resize: none;overflow: auto;}
 body{
   font-size: 0.347rem;
 }
+
+.clearfix {
+  overflow: auto;
+}
+
 .container{
   position: relative;
   margin-bottom: 1.3rem;
@@ -150,8 +155,8 @@ img {
     width: 20%;
     height: 1.24rem;
     .bannerImg{
-      width: 0.59rem;
-      height: 0.59rem;
+      width: 56 / @base_rem;
+      height: 68 / @base_rem;
       margin: 0.18rem auto 0.08rem;
       input{
         display: none;
@@ -537,5 +542,61 @@ img {
     .active {
         background: url('/image/icon/40-hongxin.png') no-repeat;
         background-size: 100%;
+    }
+}
+
+.image-meta-box {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 38 / @base_rem 30 / @base_rem;
+    .score-info {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        img {
+            width: 285 / @base_rem;
+        }
+        .score-count {
+            color: #666666;
+        }
+        .score-word {
+            color: #999999;
+        }
+    }
+    .rule {
+        color: #167ee9;
+    }
+}
+
+.space-box {
+    background-color: #fbfbfb;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.photo-detail {
+    .space-box {
+        height: 10 / @base_rem;
+    }
+}
+
+.btn {
+    background-color: #167ee9;
+    border: 1px solid #2f7bdb;
+    color: #ffffff;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-box {
+    position: relative;
+    .btn {
+        margin: 40 / @base_rem 80 / @base_rem;
+        border-radius: 5 / @base_rem;
+        height: 80 / @base_rem;
     }
 }

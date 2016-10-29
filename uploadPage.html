@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <script src="js/jquery-3.1.0.min.js"></script>
         <link rel="stylesheet/less" type="text/css" href="css/style.less" />
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
         <script src="css/less.min.js"></script>
         <script src="js/rem.js"></script>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <div class="modal">
@@ -15,11 +17,28 @@
                     确认截图 >
                 </div>
                 <div class="selectArea">
-                    <img src="image/cook.png" />
+                    <img class="img" src="image/fishImg.png"/>
                 </div>
                 <div class="description">
                     截取照片中最想展现的部分
                 </div>
+            </div>
+        </div>
+        <div class="imgSure" style="display: none;">
+            <div class="imgBackground">
+                <div class="button">
+                    确认开晒 >
+                </div>
+                <div class="fourImg">
+                    <!--<div><img src=""></div>-->
+                    <div id="lastDiv">
+                        <label>
+                            <img src="image/upload.png"/>
+                            <input type="file" style="display: none"/>
+                        </label>
+                    </div>
+                </div>
+                <textarea class="imgText" placeholder="输入您想说的话......"></textarea>
             </div>
         </div>
     </body>
